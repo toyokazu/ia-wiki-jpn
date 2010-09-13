@@ -31,7 +31,8 @@
  */
 
 // jcode¤Î½êºß
-define('JCODE_DIR', './jcode_1.34/');
+define('JCODE_DIR', './jcode_1.35a/');
+//define('JCODE_DIR', './jcode_1.34/');
 define('JCODE_FILE', JCODE_DIR . 'jcode_wrapper.php');
 
 if (is_readable(JCODE_FILE)) {

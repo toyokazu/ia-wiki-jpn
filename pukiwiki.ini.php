@@ -83,6 +83,7 @@ define('PLUGIN_DIR',    DATA_HOME . 'plugin/'   ); // Plugin directory
 // Directory settings II (ended with '/')
 
 // Skins / Stylesheets
+//define('SKIN_DIR', 'skin/irid/');
 define('SKIN_DIR', 'skin/');
 // Skin files (SKIN_DIR/*.skin.php) are needed at
 // ./DATAHOME/SKIN_DIR from index.php, but
@@ -120,7 +121,8 @@ $page_title = 'PukiWiki';
 //$script_directory_index = 'index.php';
 
 // Site admin's name (CHANGE THIS)
-$modifier = 'anonymous';
+$modifier = 'admin';
+#$modifier = 'anonymous';
 
 // Site admin's Web page (CHANGE THIS)
 $modifierlink = 'http://pukiwiki.example.com/';
@@ -190,7 +192,8 @@ $notimeupdate = 1;
 // Admin password for this Wikisite
 
 // Default: always fail
-$adminpass = '{x-php-md5}!';
+$adminpass = '1234qwer';
+//$adminpass = '{x-php-md5}!';
 
 // Sample:
 //$adminpass = 'pass'; // Cleartext

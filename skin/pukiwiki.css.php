@@ -37,11 +37,15 @@ blockquote { margin-left:32px; }
 
 body,td {
 	color:black;
-	background-color:white;
-	margin-left:2%;
-	margin-right:2%;
-	font-size:90%;
-	font-family:verdana, arial, helvetica, Sans-Serif;
+  background-color:white;
+  margin-left:auto;
+	//margin-left:2%;
+	margin-right:auto;
+	//margin-right:2%;
+  font-size:90%;
+  font-family:"Hiragino Kaku Gothic Pro", "¥Ò¥é¥®¥Î³Ñ¥´ Pro W3", 'Times New Roman','£Í£Ó £ÐÌÀÄ«', serif;
+//  font-family:verdana, arial, helvetica, Sans-Serif;
+  width:700px;
 }
 
 a:link {
@@ -329,6 +333,10 @@ strong.word9 {
 .edit_form { clear:both; }
 
 /* pukiwiki.skin.php */
+div#container {
+  width:700px;
+}
+
 div#header {
 	padding:0px;
 	margin:0px;
@@ -342,6 +350,43 @@ div#navigator {
 	padding:4px 0px 0px 0px;
 	margin:0px;
 <?php   } ?>
+}
+
+table#navigator {
+  width:100%;
+  height:20px;
+  //width:700px;
+  //height:20px;
+  border-collapse:collapse;
+  background-color:#999999;
+}
+
+td.navigator {
+  width:139px;
+  text-align:center;
+  color:white;
+  font-weight:bold;
+  background-color:inherit;
+	border-bottom:  1px solid black;
+	border-top:     1px solid black;
+	border-left:    1px solid black;
+	border-right:   1px solid black;
+}
+
+td.navigator a {
+  color:white;
+  font-weight:bold;
+  background-color:inherit;
+}
+
+span.navigator {
+  color:gray;
+}
+
+hr.navigator {
+  height: 1px;
+  border: none;
+  border-top: 1px gray solid;
 }
 
 td.menubar {
@@ -373,11 +418,17 @@ div#menubar ul {
 
 div#menubar ul li { line-height:110%; }
 
+div#menubar ul li a {
+  color:black;
+  font-weight:bold;
+  text-decoration: underline;
+}
+
 div#menubar h4 { font-size:110%; }
 
 div#body {
 	padding:0px;
-	margin:0px 0px 0px .5em;
+  margin:0px 0px 0px .5em;
 }
 
 div#note {
@@ -650,4 +701,215 @@ td.vote_td1 {
 td.vote_td2 {
 	color:inherit;
 	background-color:#EEF5FF;
+}
+
+/* table_header.inc.php */
+table#news {
+  border-collapse:collapse;
+  border:0px;
+  width:100%;
+}
+
+thead.news {
+  color:white;
+  background-color:rgb(51, 102, 255);
+}
+
+thead.news > tr > th {
+  text-align:left;
+  font-weight:normal;
+}
+
+tbody.news {
+  background-color:rgb(232, 239, 255);
+}
+
+table#cfp {
+  border-collapse:collapse;
+  border:0px;
+  width:54%;
+  float:right;
+}
+
+thead.cfp {
+  border-bottom: 1px solid rgb(51, 102, 255);
+}
+
+thead.cfp > tr > th {
+  text-align:left;
+  font-weight:normal;
+}
+
+table#link {
+  border-collapse:collapse;
+  border:0px;
+  width:54%;
+  float:right;
+	border-bottom:  1px solid gray;
+	border-top:     1px solid gray;
+	border-left:    1px solid gray;
+	border-right:   1px solid gray;
+}
+
+thead.link {
+  color:white;
+  background-color:gray;
+}
+
+thead.link > tr > th {
+  text-align:center;
+  font-weight:normal;
+}
+
+/* table_footer.inc.php */
+
+/* news_table_entry.inc.php */
+tr.news {
+  border-bottom: 1px solid gray;
+}
+
+td.news_left_gray {
+  width:12%;
+  background-color:rgb(232, 239, 255);
+  //background-color:inherit;
+}
+
+td.news_left_white {
+  width:12%;
+  background-color:white;
+  //background-color:inherit;
+}
+
+td.news_right_gray {
+  width:87%;
+  background-color:rgb(232, 239, 255);
+  //background-color:inherit;
+}
+
+td.news_right_white {
+  width:87%;
+  background-color:white;
+  //background-color:inherit;
+}
+
+span.news_title {
+  color:#FF3399;
+  font-weight:bold;
+}
+
+a.news {
+  color:#006666;
+}
+
+/* cfp_table_entry.inc.php */
+td.cfp {
+  font-weight:bold;
+}
+
+td.cfp_align_right {
+  text-align:right;
+  border-bottom: 1px solid rgb(51, 102, 255);
+}
+
+span.cfp_status {
+  color:#FF3399;
+  font-weight:bold;
+}
+
+/* link_table_entry.inc.php */
+td.link {
+  text-align:left;
+}
+
+td.link a {
+  color:black;
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+/* ieice_schedule_table.inc.php */
+table#ieice_schedule {
+  border-collapse:collapse;
+  border:0px;
+  width:45%;
+  float:left;
+}
+
+thead.ieice_schedule {
+  color:white;
+  background-color:rgb(51, 102, 255);
+}
+
+thead.ieice_schedule > tr > th {
+  text-align:left;
+  font-weight:normal;
+}
+
+tr.ieice_schedule {
+  border-bottom: 1px solid gray;
+  //border-bottom: 1px solid rgb(51, 102, 255);
+}
+
+tbody.ieice_schedule {
+  background-color:rgb(232, 239, 255);
+}
+
+td.ieice_schedule {
+  background-color:inherit;
+}
+
+td.ieice_schedule_left {
+  width:37%;
+  background-color:inherit;
+}
+
+td.ieice_schedule_right {
+  width:62%;
+  background-color:inherit;
+}
+
+td.ieice_schedule_align_right {
+  text-align:right;
+  background-color:inherit;
+}
+
+a.ieice_schedule {
+  color:#006666;
+}
+
+span.ieice_schedule_event {
+  color:#006666;
+  font-weight:bold;
+}
+
+span.ieice_schedule_status {
+  color:#FF3399;
+  font-weight:bold;
+}
+
+/* full_hr.inc.php */
+hr.full {
+  width:100%;
+	border-style:solid;
+	//border-style:ridge;
+	border-color:gray;
+	//border-color:#333333;
+  border-width:1px 0px;
+  float:left;
+}
+
+/* full_text.inc.php */
+div.full_text {
+  width:100%;
+  float:left;
+}
+
+div.full_text a {
+  font-weight:bold;
+  color:#006666;
+}
+
+div.full_text p.full_footer {
+  text-align:center;
+  color:gray;
 }
