@@ -38,7 +38,7 @@ function plugin_cfp_table_entry_convert()
       '  <tr>' . "\n" .
       '    <td class="cfp_align_right">' .
       '<a href="' . $url . '" class="cfp">' .
-      '¡¥¡¥¡¥Åê¹ÆÍ×¹à>>>' .
+      '¡¥¡¥¡¥Åê¹ÆÍ×¹à&gt;&gt;&gt;' .
       '</a>' .
       '</td>' . "\n" .
       '  </tr>' . "\n";

@@ -16,6 +16,13 @@ $_IMAGE['skin']['logo']     = 'ia-logo.gif';
 //$_IMAGE['skin']['logo']     = 'pukiwiki.png';
 $_IMAGE['skin']['favicon']  = ''; // Sample: 'image/favicon.ico';
 
+// skin language
+global $_CURR_LANG, $_TO_LANG, $_FROM_PATH, $_TO_PATH;
+$_CURR_LANG = "jpn";
+$_TO_LANG = "eng";
+$_FROM_PATH = "ia-wiki-" . $_CURR_LANG;
+$_TO_PATH = "ia-wiki-" . $_TO_LANG;
+
 // SKIN_DEFAULT_DISABLE_TOPICPATH
 //   1 = Show reload URL
 //   0 = Show topicpath
@@ -86,7 +93,7 @@ if (isset($pkwk_dtd)) {
 <div id="container">
 
 <div id="header">
- <a href="<?php echo $link['top'] ?>"><img id="logo" src="<?php echo IMAGE_DIR . $image['logo'] ?>" width="700" height="79" alt="[インターネットアーキテクチャ研究会]" title="[インターネットアーキテクチャ研究会]" /></a>
+ <a href="<?php echo $link['top'] ?>"><img id="logo" src="<?php echo IMAGE_DIR . $image['logo'] ?>" alt="[インターネットアーキテクチャ研究会]" title="[インターネットアーキテクチャ研究会]" /></a>
 </div>
 
 <div id="navigator">
@@ -95,7 +102,7 @@ if (isset($pkwk_dtd)) {
   <td class="navigator">
   <a href="<?php echo $link['top'] ?>">TOP</a></td>
   <td class="navigator">
-  <a href="http://www.ieice.org/ken/program/index.php?tgid=IA&layout=&lang=jpn">
+  <a href="http://www.ieice.org/ken/program/index.php?tgid=IA&layout=&lang=<?php echo $_CURR_LANG ?>">
   研究会開催予定</a></td>
   <td class="navigator">
   <a href="index.php?submission">発表・論文投稿</a></td>
@@ -114,7 +121,7 @@ if (isset($pkwk_dtd)) {
   <td class="navigator">
   <a href="index.php?studentaward">学生研究奨励賞</a></td>
   <td class="navigator">
-  <a href="../eng/index.htm">English&gt;&gt;&gt</a></td>
+  <a href="<?php echo str_replace($_FROM_PATH, $_TO_PATH, $_SERVER['REQUEST_URI']) ?>">English&gt;&gt;&gt;</a></td>
 </tr>
 </table>
 </div>
@@ -200,7 +207,7 @@ function _toolbar($key, $x = 20, $y = 20){
 <hr class="navigator"/>
 
 <ul>
-<li><a href="http://www.ieice.org/ken/program/index.php?tgid=IA&layout=&lang=jpn">研究会開催予定</a></li>
+<li><a href="http://www.ieice.org/ken/program/index.php?tgid=IA&layout=&lang=<?php echo $_CURR_LANG ?>">研究会開催予定</a></li>
 今年度開催予定の研究会について
 <li><a href="index.php?houkoku">開催報告</a></li>
 過去に開催された研究会について

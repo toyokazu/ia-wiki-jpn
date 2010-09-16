@@ -4,7 +4,7 @@
 // IEICE schedule table plugin
 //
 // Usage:
-//	#ieice_schedule_table({[title], [tgid], [from], [to]})
+//	#ieice_schedule_table({[title], [tgid], [from], [to], [lang]})
 //  tgid: e.g. IEICE-IA
 //	from: yyyy-mm-dd
 //	to: yyyy-mm-dd
@@ -17,11 +17,12 @@ function plugin_ieice_schedule_table_convert()
     $tgid = $args[1];
     $from = $args[2];
     $to = $args[3];
+    $lang = $args[4];
 	}
 
   //$from = "2010-04-01"; $to = "2011-03-31";
   //$tgid = "IEICE-IA";
-  //$content = file_get_contents("http://www.ieice.org/ken/program/?cmd=serialized_schedule&tgid=$tgid&from=$from&to=$to");
+  //$content = file_get_contents("http://www.ieice.org/ken/program/?cmd=serialized_schedule&tgid=$tgid&from=$from&to=$to&lang=$lang");
   // read content from file
   $content = file_get_contents(DATA_HOME . 'test.data');
   $schedule_vars_list = unserialize($content);
@@ -98,8 +99,8 @@ function plugin_ieice_schedule_table_convert()
     '  </tr>' . "\n" .
     '  <tr>' . "\n" .
     '    <td class="ieice_schedule_align_right" colspan=2>' .
-    '<a href="http://www.ieice.org/ken/program/index.php?tgid=IEICE-IA&layout=&lang=" class="ieice_schedule">' .
-    '．．．研究会開催スケジュール>>>' .
+    '<a href="http://www.ieice.org/ken/program/index.php?tgid=IEICE-IA&layout=&lang=' . $lang . '" class="ieice_schedule">' .
+    '．．．研究会開催スケジュール&gt;&gt;&gt;' .
     '</a>' .
     '</td>' . "\n" .
     '  </tr>' . "\n" .

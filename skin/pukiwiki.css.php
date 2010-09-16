@@ -495,7 +495,9 @@ img#logo {
 	display:none;
 <?php   } else { ?>
 	float:left;
-	margin-right:20px;
+  margin-right:20px;
+  width:700px;
+  height:79px;
 <?php   } ?>
 }
 
