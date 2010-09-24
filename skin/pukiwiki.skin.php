@@ -79,7 +79,9 @@ if (isset($pkwk_dtd)) {
 
  <title>インターネットアーキテクチャ研究会 - <?php echo $title ?></title>
 
+<!--
  <link rel="SHORTCUT ICON" href="<?php echo $image['favicon'] ?>" />
+-->
  <link rel="stylesheet" type="text/css" media="screen" href="skin/pukiwiki.css.php?charset=<?php echo $css_charset ?>" charset="<?php echo $css_charset ?>" />
  <link rel="stylesheet" type="text/css" media="print"  href="skin/pukiwiki.css.php?charset=<?php echo $css_charset ?>&amp;media=print" charset="<?php echo $css_charset ?>" />
  <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo $link['rss'] ?>" /><?php // RSS auto-discovery ?>
