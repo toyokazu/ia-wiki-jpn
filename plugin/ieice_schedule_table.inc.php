@@ -22,7 +22,7 @@ function plugin_ieice_schedule_table_convert()
 
   //$from = "2010-04-01"; $to = "2011-03-31";
   //$tgid = "IEICE-IA";
-  //$content = file_get_contents("http://www.ieice.org/ken/program/?cmd=serialized_schedule&tgid=$tgid&from=$from&to=$to&lang=$lang");
+  //$content = file_get_contents("http://www.ieice.org/ken/program/?cmd=serialized_schedule&tgid=$tgid&from=$from&to=$to");
   // read content from file
   $content = file_get_contents(DATA_HOME . 'test.data');
   $schedule_vars_list = unserialize($content);
