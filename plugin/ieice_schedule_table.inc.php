@@ -49,9 +49,9 @@ function plugin_ieice_schedule_table_convert()
     $start_date = new DateTime($schedule_vars['tgs_yy'] . '-' . $schedule_vars['tgs_mm'] . '-' . $schedule_vars['tgs_dd']);
     $end_date = clone $start_date;
     $end_date->add(new DateInterval('P' . ($schedule_vars['tgs_ndays'] - 1) . 'D'));
-    $invert_now = $now->diff($end_date);
+    $interval_now = $now->diff($end_date);
     // show workshop status
-    if ($invert_now->invert == 1 && $invert_now->days > 7) { // program is finished more than a week ago
+    if ($interval_now->invert == 1 && $interval_now->days > 7) { // program was finished more than a week ago
       $ret .= '    <td class="ieice_schedule_right">' .
         '</td>' . "\n";
     } elseif ($schedule_vars['tgs_prg_openflag'] == '1') { // program is already opened
@@ -75,7 +75,7 @@ function plugin_ieice_schedule_table_convert()
     // show workshop dates
     $ret .= '  <tr class="ieice_schedule">' . "\n";
     $ret .= '    <td class="ieice_schedule_left">';
-    if ($invert_now->invert == 1 && $invert_now->days > 7) { // program is finished more than a week ago
+    if ($interval_now->invert == 1 && $interval_now->days > 7) { // program was finished more than a week ago
         $ret .= '<strike>' .
         $start_date->format('n/j') . '¡Á' . $end_date->format('n/j') .
         '</strike>';
