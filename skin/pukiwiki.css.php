@@ -108,7 +108,7 @@ h3 {
 h4 {
 	font-family:verdana, arial, helvetica, Sans-Serif;
 	//border-left:   18px solid #DDEEFF;
-	border-bottom:  2px solid rgb(51, 102, 255);
+	border-bottom:  1px solid rgb(51, 102, 255);
 
 	color:rgb(51, 102, 255);
 	//color:inherit;
@@ -170,10 +170,11 @@ strong { font-weight:bold; }
 
 thead td.style_td,
 tfoot td.style_td {
-	color:inherit;
-  color: rgb(51, 102, 255);
-	//background-color:#D0D8E0;
-	border-bottom:  2px solid rgb(51, 102, 255);
+	color:#FFFFFF;
+	background-color:#808080;
+  //color: rgb(51, 102, 255);
+	//border-top:  2px solid rgb(51, 102, 255);
+	//border-bottom:  2px solid rgb(51, 102, 255);
 }
 
 thead th.style_th,
@@ -203,7 +204,8 @@ tfoot th.style_th {
 	color:inherit;
 	background-color:#FFFFFF;
 	//background-color:#EEF5FF;
-	border-bottom:  1px solid rgb(51, 102, 255);
+	//border-bottom:  1px solid rgb(51, 102, 255);
+	border-bottom:  1px solid black;
 }
 
 ul.list1 { list-style-type:disc; }
