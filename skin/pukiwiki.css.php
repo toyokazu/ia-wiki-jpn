@@ -848,6 +848,32 @@ td.link a {
   text-decoration: underline;
 }
 
+/* award_table_entry.inc.php */
+table#award {
+  border-collapse:collapse;
+}
+
+table#award th {
+  font-size: 120%;
+  color: #3366FF;
+  border: 3px dotted #3366FF;
+}
+
+table#award tbody td {
+  border-bottom: 1px solid gray;
+}
+
+td.award_left {
+  width:150px;
+  align:left;
+  vertical-align:top;
+}
+
+td.award_right {
+  align:left;
+  vertical-align:top;
+}
+
 /* ieice_schedule_table.inc.php */
 table#ieice_schedule {
   border-collapse:collapse;
@@ -993,3 +1019,4 @@ table#submission_guideline td.space_box {
 table#submission_guideline span {
   color: #FF3399;
 }
+

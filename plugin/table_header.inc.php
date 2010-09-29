@@ -5,7 +5,7 @@
 //
 // Usage:
 //	#table_header({type, title})
-//	type: {news, cfp}
+//	type: {news, cfp, link, award}
 //	title: table title
 
 function plugin_table_header_convert()
