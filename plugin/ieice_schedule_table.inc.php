@@ -29,12 +29,12 @@ function plugin_ieice_schedule_table_convert()
 
   $ret = "\n" .
     '<table id="ieice_schedule">' . "\n" .
-    '  <thead class="ieice_schedule">' . "\n" .
+    '  <thead>' . "\n" .
     '    <tr>' . "\n" .
     '      <th colspan="2">' . $title . '</th>' . "\n" .
     '    </tr>' . "\n" .
     '  </thead>' . "\n" .
-    '  <tbody class="ieice_schedule">' . "\n";
+    '  <tbody>' . "\n";
   date_default_timezone_set('Asia/Tokyo');
   $now = new DateTime("now");
   foreach ($schedule_vars_list as $key => $schedule_vars) {

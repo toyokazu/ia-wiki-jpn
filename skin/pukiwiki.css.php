@@ -856,23 +856,23 @@ table#ieice_schedule {
   float:left;
 }
 
-thead.ieice_schedule {
+table#ieice_schedule thead {
   color:white;
   background-color:rgb(51, 102, 255);
 }
 
-thead.ieice_schedule > tr > th {
+table#ieice_schedule thead > tr > th {
   text-align:left;
   font-weight:normal;
+}
+
+table#ieice_schedule tbody {
+  background-color:rgb(232, 239, 255);
 }
 
 tr.ieice_schedule {
   border-bottom: 1px solid gray;
   //border-bottom: 1px solid rgb(51, 102, 255);
-}
-
-tbody.ieice_schedule {
-  background-color:rgb(232, 239, 255);
 }
 
 td.ieice_schedule {
