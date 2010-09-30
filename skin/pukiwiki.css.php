@@ -43,7 +43,7 @@ body,td {
 	margin-right:auto;
 	//margin-right:2%;
   font-size:90%;
-  font-family:"Hiragino Kaku Gothic Pro", "¥Ò¥é¥®¥Î³Ñ¥´ Pro W3", 'Times New Roman','£Í£Ó £ÐÌÀÄ«', serif;
+  font-family:"Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro W3", 'Times New Roman','‚l‚r ‚o–¾’©', serif;
 //  font-family:verdana, arial, helvetica, Sans-Serif;
   width:700px;
 }
@@ -82,7 +82,8 @@ a:hover {
 }
 
 h1, h2 {
-	font-family:verdana, arial, helvetica, Sans-Serif;
+	font-family:verdana, arial, helvetica, '‚l‚r ‚o–¾’©', Sans-Serif;
+	//font-family:verdana, arial, helvetica, Sans-Serif;
 	color:inherit;
 	background-color:#DDEEFF;
 	padding:.3em;
@@ -90,7 +91,8 @@ h1, h2 {
 	margin:0px 0px .5em 0px;
 }
 h3 {
-	font-family:verdana, arial, helvetica, Sans-Serif;
+	font-family:verdana, arial, helvetica, '‚l‚r ‚o–¾’©', Sans-Serif;
+	//font-family:verdana, arial, helvetica, Sans-Serif;
 	border-bottom:  3px solid rgb(51, 102, 255);
 	//border-bottom:  3px solid #DDEEFF;
 	//border-top:     1px solid rgb(51, 102, 255);
@@ -106,7 +108,8 @@ h3 {
 	margin:0px 0px .5em 0px;
 }
 h4 {
-	font-family:verdana, arial, helvetica, Sans-Serif;
+	font-family:verdana, arial, helvetica, '‚l‚r ‚o–¾’©', Sans-Serif;
+	//font-family:verdana, arial, helvetica, Sans-Serif;
 	//border-left:   18px solid #DDEEFF;
 	border-bottom:  1px solid rgb(51, 102, 255);
 
@@ -117,7 +120,8 @@ h4 {
 	margin:0px 0px .5em 0px;
 }
 h5, h6 {
-	font-family:verdana, arial, helvetica, Sans-Serif;
+	font-family:verdana, arial, helvetica, '‚l‚r ‚o–¾’©', Sans-Serif;
+	//font-family:verdana, arial, helvetica, Sans-Serif;
 	color:inherit;
 	background-color:#DDEEFF;
  	padding:.3em;
