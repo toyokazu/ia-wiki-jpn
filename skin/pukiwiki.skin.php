@@ -135,6 +135,7 @@ if (isset($pkwk_dtd)) {
  <tr>
   <td class="menubar">
     <div id="menubar">
+<img id="counter" src="/cgi-bin/Count.cgi?df=ia-count.dat"/>
 <?php
 
 // Set toolbar-specific images

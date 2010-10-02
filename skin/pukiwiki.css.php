@@ -1024,3 +1024,8 @@ table#submission_guideline span {
   color: #FF3399;
 }
 
+/* for counter */
+img#counter {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
