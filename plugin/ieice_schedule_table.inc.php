@@ -18,9 +18,15 @@ function get_workshop_title()
     $key = $args[1];
     $type = $args[2];
   }
+  $urlj = '';
+  if (strpos($schedule_vars['tgs_frm1_type_db'], 'STD') === 0) {
+    $urlj = 'http://www.ieice.org/ken/' . $type . '/index.php?tgs_regid=' . $schedule_vars['tgs_regid'];
+  } else {
+    $urlj = $schedule_vars['tgs_o_frm1_urlj'];
+  }
   $ret .= '  <tr>' . "\n";
   $ret .= '    <td class="ieice_schedule_left">' .
-    '<a href="http://www.ieice.org/ken/' . $type . '/index.php?tgs_regid=' . $schedule_vars['tgs_regid'] . '">' .
+    '<a href="' . $urlj . '">' .
     '<span class="ieice_schedule_event">'.
     '■第' . ($key + 1) . '回研究会' .
     '</span>' .
@@ -131,7 +137,7 @@ function plugin_ieice_schedule_table_convert()
     '  </tr>' . "\n" .
     '  <tr class="ieice_schedule">' . "\n" .
     '    <td class="ieice_schedule" colspan=2>' .
-    '開催日に関わらず、各研究会への発表申込を常時受け付けております。各回ごとに発表申込システムへリンクしています。なお、発表原稿のwebアップロードの〆切は研究会の概ね3週間前ですが、具体的な期日は発表申込み後にwebシステムから著者に連絡されるメールに従ってください。' .
+    '各回ごとに発表申込システムへリンクしています。なお、発表原稿のwebアップロードの〆切は研究会の概ね3週間前ですが、具体的な期日は発表申込み後にwebシステムから著者に連絡されるメールに従ってください。' .
     '</td>' . "\n" .
     '  </tr>' . "\n" .
     '  </tbody>' . "\n" .
