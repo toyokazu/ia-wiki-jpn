@@ -195,7 +195,7 @@ function _toolbar($key, $x = 20, $y = 20){
 		<?php _toolbar('upload') ?>
 	<?php } ?>
 	<?php //_toolbar('copy') ?>
-	<?php //_toolbar('rename') ?>
+	<?php _toolbar('rename') ?>
 <?php } ?>
  <?php //_toolbar('reload') ?>
 <?php } ?>
