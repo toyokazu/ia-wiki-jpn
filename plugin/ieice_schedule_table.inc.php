@@ -19,7 +19,7 @@ function get_workshop_title()
     $type = $args[2];
   }
   $urlj = '';
-  if (strpos($schedule_vars['tgs_frm1_type_db'], 'STD') === 0) {
+  if (strpos($schedule_vars['tgs_frm1_type'], 'STD') === 0) {
     $urlj = 'http://www.ieice.org/ken/' . $type . '/index.php?tgs_regid=' . $schedule_vars['tgs_regid'];
   } else {
     $urlj = $schedule_vars['tgs_o_frm1_urlj'];
